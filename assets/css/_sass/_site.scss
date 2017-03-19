@@ -158,7 +158,9 @@ main {position: relative;}
 }
 
 // Miscellenous
-ul {list-style-type: square;}
+ul {list-style-type: square;
+      color: red;
+}
 
 // Twitter timeline
 .twitter-timeline {width: 100% !important;}
@@ -369,6 +371,8 @@ pre {
   .sidebar{
     margin-left: 1.875em;
     position: relative !important;
+    background: $primary-color;
+
   }
 
   .row-offcanvas {
