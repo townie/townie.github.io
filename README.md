@@ -40,5 +40,4 @@ $ jekyll serve --watch
 # Serve site locally
 ```
 
-## Copyright & License
-The MIT License (MIT), Copyright (c) 2014 Nii Adjetey Sowah. [Read full document.](LICENSE)
+Credit: Origianl source [iamnii/wanganap](https://github.com/iamnii/wanganap)
