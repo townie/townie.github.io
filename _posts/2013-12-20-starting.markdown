@@ -2,7 +2,9 @@
 layout: post
 title: Original Blog Post
 date: 2013-12-20
-categories: update
+tags: update
+archive: false
+
 ---
 So, finally a blog. I have been meaning to go down this path for some months now and we have come to this cross roads. The idea of creating a page for people to read my writing is a little self centered but I feel like I should share with the world what is going on in my head. While this may be a little intimidating to me, since I am dyslexic(or rather used to be not sure how much it really affects me now). I dont want to use my lethargicness to pervade my life any more so there for I am writing this blog.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Learning Software Engineering
-date: 2013-12-29T14:37:44.000Z
-categories: update
+date: 2013-12-29
+tags: update
 archive: false
 
 ---

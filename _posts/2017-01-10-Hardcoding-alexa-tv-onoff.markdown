@@ -2,9 +2,10 @@
 layout: post
 title: Project "Alexa, Tv On/Off"
 date: 2017-01-10
-tags: update
+tags: update iot alexa ifttt sony bravia api
 archive: false
 comments: true
+youtubeId: IkT3rbr5kug
 
 ---
 
@@ -22,4 +23,11 @@ Hook up Alexa with IFTTT , and just like that you are able to Turn on and off yo
 
 But as you may have guess something changed, as things tend to, and my wonderful world of "Alexa, Tv On/Off". 
 
-Moral of the Story: Don't hard code things that can easily change.
+
+# Demo Time
+
+
+{% include youtubePlayer.html id=page.youtubeId %}
+
+
+
