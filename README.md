@@ -3,8 +3,15 @@
 
 [Jekyll](http://jekyllrb.com/) based blog.
 
+> Run locally with Docker
+```
+docker build -t blog .
+docker run --net=host -it -p 4000:4000 -v $PWD:/blog blog bash
 
-3 > Run locally with the following commands while in the root directory and view in a browser at localhost:4000
+```
+
+
+> Run locally with the following commands while in the root directory and view in a browser at localhost:4000
 ``` bat
 $ jekyll build
 # Compile and build site files
@@ -13,4 +20,4 @@ $ jekyll serve --watch
 # Serve site locally
 ```
 
-Credit: Original source [ajthewebdev](https://github.com/ajthewebdev/wanganap).
+Credit: Original source [ajthewebdev](https://github.com/ajthewebdev).

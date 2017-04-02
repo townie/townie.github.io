@@ -2,7 +2,7 @@
 layout: post
 title: Project "Alexa, Tv On/Off"
 date: 2017-01-10
-tags: update iot alexa ifttt sony bravia api
+tags: iot alexa ifttt sony bravia api
 archive: false
 comments: true
 youtubeId: IkT3rbr5kug

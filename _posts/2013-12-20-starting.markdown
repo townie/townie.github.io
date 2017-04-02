@@ -2,7 +2,6 @@
 layout: post
 title: Original Blog Post
 date: 2013-12-20
-tags: update
 archive: false
 
 ---

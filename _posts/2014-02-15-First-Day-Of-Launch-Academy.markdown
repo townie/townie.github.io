@@ -2,9 +2,7 @@
 layout: post
 title: First Day Of Launch Academy
 date: 2014-02-15
-tags: update
 archive: false
-
 ---
 
 First Day Of Launch Academy

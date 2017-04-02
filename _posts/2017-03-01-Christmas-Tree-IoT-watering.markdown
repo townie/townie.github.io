@@ -2,7 +2,7 @@
 layout: post
 title: Watering The Christmas Tree With IoT 
 date: 2017-03-01
-tags: update
+tags: IoT Resin.io alexa Docker RaspberryPi Christmas Hack NodeJS Javascript
 archive: false
 youtubeId: afgCxcKEhP8
 ---
