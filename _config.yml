@@ -1,5 +1,5 @@
-name: Keith's Blog
-description: Keith Webber Blog
+name: Keith Webber
+description: Random Variable 
 
 sass:
   sass_dir: assets/css/_sass
