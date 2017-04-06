@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leveraging Docker for speed
+title: Leveraging Docker For Services
 date: 2017-03-30
 tags: Docker 
 archive: false
