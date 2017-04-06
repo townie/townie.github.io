@@ -4,7 +4,7 @@ title: Leveraging Docker for speed
 date: 2017-03-30
 tags: Docker 
 archive: false
-comments: true
+comments: false
 ---
 
 Docker is a great tool that I have written about in the past. It is easy to get going with and allows a great amount of automation and consistency.

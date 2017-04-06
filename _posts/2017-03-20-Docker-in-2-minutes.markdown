@@ -4,7 +4,7 @@ title: Learn Docker in 2 minutes!
 date: 2017-03-20
 tags: Docker tutorial
 archive: false
-comments: true
+comments: false
 ---
 
 Docker is a great tool to help provide a consistent enviornment, that allows easy development and can simply deployment. 

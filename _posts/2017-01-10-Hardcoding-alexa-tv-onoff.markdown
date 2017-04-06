@@ -4,7 +4,7 @@ title: Project "Alexa, Tv On/Off"
 date: 2017-01-10
 tags: iot alexa ifttt sony bravia api
 archive: false
-comments: true
+comments: false
 youtubeId: IkT3rbr5kug
 
 ---
