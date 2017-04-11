@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dockerizing This Jekyll Blog
+title: 8 Steps To Dockerizing This Jekyll Blog
 date: 2017-04-04
 tags: Docker 
 archive: false
@@ -12,6 +12,12 @@ Since I have recently started blogging, I really wanted a push button simple way
 So let's get starting with Dockerzing this Jekyll blog.
 
 ### Step 1: Create a Dockerfile
+```bash
+ls /path/to/blog/townie.github.io
+
+assets     _layouts  _site     archive.html  _config.yml   Dockerfile ...
+_includes  _posts    404.html  CNAME         contact.html  favicon.png...
+```
 
 `touch Dockerfile`
 

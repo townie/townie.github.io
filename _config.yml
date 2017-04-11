@@ -21,4 +21,5 @@ owner:
 ga_id: UA-43266357-8
 ga_username: #
 
-timezone: Africa/Accra
+# List https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: US/Eastern
