@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exploited - Free United Airline WiFi
-date: 2017-03-30
+title: How To Get Free United Airline WiFi
+date: 2017-10-20
 tags: Docker
 archive: false
 comments: false
 ---
 
-On my United Airlines flight back from Denver to Boston this past weekened, I took the 4 hour flight to catch up on a few peices of work that I had been procrastinating on. After a few fits and starts of work I got stuck on a problem that I didnt an answer for.
+On my United Airlines flight back from Denver to Boston this past weekened, I took the 4 hour flight to catch up on a few peices of work that I had been procrastinating on. After a few fits and starts of work I got stuck on a problem that I didnt have an answer for.
 
 Remembering that the plane probably had wifi I quickly moved to my network manager to find that there was a wifi signal! Hooray.
 A quick look over the system and I found myself on this page:
@@ -37,14 +37,14 @@ So I tried a few. First up `https://www.google.com` and `https://www.unitedwifi.
 
 Lets try:
 `https://www.unitedwifi.com/portal/l/goto?url=http://www.google.com`
-Well it looks it works!!!
+Well at looks *it works*!!!
 
 ### Success
 
 <img src="/assets/images/wifisucceskid.jpg" class="fit">
 
 
-## FREE WIFI
+## FREE WIFI SERVER
 
 So then it was just a quick few seconds before I could make 1 request a time to get access to the internet.
 
@@ -66,10 +66,9 @@ def goto(dest):
     return BASE_URL + "?{}".format(final_dest)
 
 
-@app.route('/')
-def index():
-   token = request.args.get('dest')
-
+@app.route('/<token>')
+def index(token):
+   token = request.args.get('d')
    return goto(token)
 
 
@@ -77,5 +76,7 @@ if __name__ == '__main__':
    destination = "http://www.google.com"  # MAKS SURE that it is http
    host = "localhost"
    port = "7777"
-   app.run(host=host, port=int(port), debug=True, use_reloader=False, use_debugger=True)
+   app.run(host=host, port=int(port), debug=True, use_reloader=True, use_debugger=True)
 ```
+
+src: https://github.com/townie/free_united_wifi
