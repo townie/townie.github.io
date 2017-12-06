@@ -15,7 +15,7 @@ A quick look over the system and I found myself on this page:
 <img src="/assets/images/unitedwifi.png" class="fit">
 
 
-A smooth $6.99 for standard internet or $10.99 for _Accelerated_ internet. Now while this was tempting to pay, I decided it was going to be worth it with only 1 hour or so before I was back on the ground. So started looking around what else UnitedWifi offered, maybe a few complimentary videos to help ease the mind.
+A smooth $6.99 for standard internet or $10.99 for _Accelerated_ internet. Now while this was tempting to pay, I decided it was NOT going to be worth it with only 1 hour or so before I was back on the ground. So started looking around what else UnitedWifi offered, maybe a few complimentary videos to help ease the mind.
 
 ## Free united.com surfing!
 
