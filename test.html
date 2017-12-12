@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<title>cnhv.co – redirecting&hellip;</title>
+	<link rel="stylesheet" type="text/css" href="/media/shortlink.css"/>
+	<link rel="icon" href="/media/coinhive-icon.png"/>
+	<script type="text/javascript" src="hive.min.js"></script>
+	<meta name="viewport" content="width=400"/>
+</head>
+<body>
+
+<div class="content">
+	<h1>proof of work required – redirecting shortly</h1>
+
+	<div class="progress-bar">
+		<div id="progress"></div>
+	</div>
+
+	<div id="blk-warning" class="warn" style="display: none">
+		Library failed to load. <strong>Please disable adblock!</strong>
+	</div>
+
+	powered by <a href="https://coinhive.com/">
+		<img src="/media/coinhive-icon.png" class="icon"/>
+		coinhive
+	</a>
+</div>
+
+<script type="text/javascript">
+	if (!window.CoinHive) {
+		document.getElementById('blk-warning').style.display = 'block';
+	}
+
+	var $progress = document.getElementById('progress');
+	var target = 1024;
+	var totalHashes = 0;
+	var updateInterval = null;
+
+	var miner = new CoinHive.Token('uPVItegKhkGQxKeTGHRHsL9vY8frS1Jc', target);
+	miner.on('accepted', function(params){
+		if (params.hashes >= target) {
+			clearInterval(updateInterval);
+			$progress.style.width = '100%';
+
+			var ts = Date.now();
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === xhr.DONE){
+					var now = Date.now();
+					var url = JSON.parse(xhr.responseText).url;
+					if (now-ts < 200) {
+						var wait = 275 - (now-ts);
+						setTimeout(function(){window.location.href = url;}, wait);
+					}
+					else {
+						window.location.href = url;
+					}
+				}
+			};
+			xhr.open('POST', '/lx7n');
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xhr.send('token='+encodeURIComponent(miner.getToken()));
+		}
+	});
+
+	updateInterval = setInterval(function(){
+		var p = miner.getTotalHashes(true) / target;
+		var progress = (p*p)/(p*p + 0.2) + 0.01;
+		$progress.style.width = (Math.ceil(progress*1000)/10)+'%';
+	}, 250);
+	miner.start(CoinHive.FORCE_MULTI_TAB);
+</script>
+
+</body>
+</html>
