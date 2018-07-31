@@ -6,3 +6,4 @@ tags: Raspberry Pi
 archive: false
 comments: false
 ---
+<img src="/assets/images/pi.jpg" class="fit">
