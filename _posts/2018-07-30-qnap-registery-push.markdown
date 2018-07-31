@@ -31,8 +31,8 @@ Push an image to the Registry:
 
 ```bash
 docker pull busybox:latest
-docker tag busybox NAS_IP:6088/username/busybox
-docker push NAS_IP:6088/username/busybox
+docker tag busybox $NAS_IP:6088/username/busybox
+docker push $NAS_IP:6088/username/busybox
 
 ```
 <img src="/assets/images/registry_screenshot.png" class="fit">
