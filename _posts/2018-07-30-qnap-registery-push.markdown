@@ -21,15 +21,18 @@ On PC:
 Add certificate to your Docker trusty list:
 
 ```bash
-$ mkdir -p /etc/docker/certs.d/NAS_IP:6088
-$ scp admin@NAS_IP:/etc/docker/tls/ca.pem /etc/docker/certs.d/NAS_IP:6088/ca.crt
+export NAS_IP=192.168.1.2
+
+mkdir -p /etc/docker/certs.d/$NAS_IP:6088
+scp admin@$NAS_IP:/etc/docker/tls/ca.pem /etc/docker/certs.d/$NAS_IP:6088/ca.crt
 ```
+
 Push an image to the Registry:
 
 ```bash
-$ docker pull busybox:latest
-$ docker tag busybox NAS_IP:6088/username/busybox
-$ docker push NAS_IP:6088/username/busybox
+docker pull busybox:latest
+docker tag busybox NAS_IP:6088/username/busybox
+docker push NAS_IP:6088/username/busybox
 
 ```
 <img src="/assets/images/registry_screenshot.png" class="fit">
