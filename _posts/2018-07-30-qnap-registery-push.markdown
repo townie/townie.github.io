@@ -9,6 +9,7 @@ comments: false
 # How to Push Images to Qnap Container Station Registery
 
 ## Registry
+<img src="/assets/images/registry_title.png" class="fit">
 
 ## Usage
 On Container Station:
@@ -31,3 +32,4 @@ $ docker tag busybox NAS_IP:6088/username/busybox
 $ docker push NAS_IP:6088/username/busybox
 
 ```
+<img src="/assets/images/registry_screenshot.png" class="fit">
