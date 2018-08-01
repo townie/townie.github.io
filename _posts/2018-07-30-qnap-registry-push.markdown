@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  How to Push Images to Qnap Container Station Registery
+title:  How to Push Images to Qnap Container Station Registry
 date: 2018-08-30
 tags: Qnap
 archive: false
 comments: false
 ---
-# How to Push Images to Qnap Container Station Registery
+# How to Push Images to Qnap Container Station Registry
 
 ## Registry
 <img src="/assets/images/registry_title.png" class="fit">
